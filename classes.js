@@ -62,12 +62,9 @@ console.log(newEmployee);
   Call your new class Manager
 */
 
-class Manager {
+class Manager extends Employee {
   constructor(firstName, lastName, email, age, reports) {
-    this.first_name = firstName;
-    this.last_name = lastName;
-    this.email = email;
-    this.age = age;
+    super(first, last, email, age);
     this.reports = [];
   }
   hire(employee) {
